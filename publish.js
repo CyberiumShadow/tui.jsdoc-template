@@ -45,8 +45,8 @@ function find(spec) {
 
 function tutoriallink(tutorial) {
     return helper.toTutorial(tutorial, null, {
-        tag: 'em',
-        classname: 'disabled',
+        tag: 'em', 
+        classname: 'disabled', 
         prefix: 'Tutorial: '
     });
 }
@@ -458,7 +458,7 @@ function buildNav(members) {
 
     nav += buildMemberNav(members.tutorials, tutorialsName, seenTutorials, linktoTutorial, true);
     nav += buildMemberNav(members.modules, 'Modules', {}, linkto);
-  //  nav += buildMemberNav(members.externals, 'Externals', seen, linktoExternal);
+    nav += buildMemberNav(members.externals, 'Externals', seen, linktoExternal);
     nav += buildMemberNav(members.classes, 'Classes', seen, linkto);
     nav += buildMemberNav(members.namespaces, 'Namespaces', seen, linkto);
     nav += buildMemberNav(members.mixins, 'Mixins', seen, linkto);
