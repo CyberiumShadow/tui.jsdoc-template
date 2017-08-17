@@ -3,6 +3,7 @@ var templates = env.conf.templates;
 var examples = env.conf.opts.tutorials;
 var css = templates.css;
 var logo = templates.logo;
+var footerText = templates.footerText;
 var logoUrl = 'img/toast-ui.png';
 var width, height;
 var name = templates.name || package.name || title;
@@ -94,7 +95,7 @@ if (package) {
 </div>
 
 <footer>
-    <div class="footer-text"><?js= 'Welcome to Komada\'s Documentation! Discord: https://discord.gg/FpEFSyY' ?></div>
+    <div class="footer-text"><?js= footerText ?></div>
 </footer>
 <script>prettyPrint();</script>
 <script src="scripts/jquery.min.js"></script>
