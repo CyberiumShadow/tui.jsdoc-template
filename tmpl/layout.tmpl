@@ -5,6 +5,7 @@ var css = templates.css;
 var logo = templates.logo;
 var footerText = templates.footerText;
 var logoUrl = 'img/toast-ui.png';
+var faviconUrl = templates.favicon || 'img/favicon.ico';
 var width, height;
 var name = templates.name || package.name || title;
 var tutorialsName = templates.tabNames.tutorials;
@@ -38,6 +39,7 @@ if (package) {
 <head>
     <meta charset="utf-8">
     <title><?js= title + ' | ' + name ?></title>
+    <link rel="shortcut icon" href="<?js= faviconUrl ?>">
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
